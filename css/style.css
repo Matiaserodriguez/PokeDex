@@ -124,7 +124,8 @@ nav ul li a:hover {
 ul {
   width: 80vw;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 10px;
   list-style: none;
   margin: 50px auto;
 }
@@ -151,6 +152,11 @@ ul {
   .container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  ul {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 @media only screen and (min-width: 64em) {
@@ -160,5 +166,8 @@ ul {
 
   .container {
     grid-template-columns: repeat(3, 1fr);
+  }
+  ul {
+    justify-content: space-between;
   }
 }
